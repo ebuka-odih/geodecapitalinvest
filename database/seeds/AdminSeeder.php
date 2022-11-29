@@ -14,14 +14,14 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        $admin = User::where('email', '=', 'admin@geodecapitalinvest.com')->first();
+        $admin = User::where('email', '=', 'admin@geodecapitalinvest.co')->first();
         if($admin === null){
             DB::table('users')->insert([
                 'name' => 'Admin',
                 'admin' => 1,
-                'email' => 'admin@geodecapitalinvest.com',
+                'email' => 'admin@geodecapitalinvest.co',
                 'email_verified_at' => \Carbon\Carbon::now(),
-                'password' => Hash::make('GeoDcapN@IPGFt'),
+                'password' => Hash::make('GeoDcapNIPGFt'),
 
             ]);
         }
