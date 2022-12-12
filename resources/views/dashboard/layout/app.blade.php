@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.0.0-359252c/tailwind.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.1.0/cdn.js"></script>
+
+    <style>
+        #google_translate_element {
+
+            color: transparent;
+        }
+
+        #google_translate_element a {
+
+            display: none;
+        }
+
+        select.google_translate_element {
+
+            color: black;
+        }
+
+        div.goog-te-gadget {
+
+            color: transparent;
+        }
+
+        div.goog-te-gadget {
+
+            color: transparent !important;
+        }
+
+        .goog-te-gadget .goog-te-combo {
+
+            margin: 0px 0 !important;
+            padding: 3px 2px;
+            background: #1d1d1d;
+            border: 1px solid #feb729;
+            color: #ffffff;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
 </head>
 <body class="bg-gray-800 w-full">
 <nav x-data="{ isOpen: false }" :aria-expanded="isOpen" @keydown.escape="isOpen = false">
@@ -24,6 +62,14 @@
                 <!--    <a href="https://www.cryptonfttrade.com/home">NFT Trades</a>-->
                 <!--</div>-->
             </div>
+            <div id="google_translate_element"></div>
+            <script>
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({
+                        pageLanguage: 'en'
+                    }, 'google_translate_element');
+                }
+            </script>
 
             <div class="hidden md:flex md:items-center">
                 <a href="{{ route('user.dashboard') }}" class="mx-3 text-gray-100 text-lg font-bold">Dashboard</a>
@@ -111,5 +157,7 @@
 </div>
 
 @yield('content')
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
