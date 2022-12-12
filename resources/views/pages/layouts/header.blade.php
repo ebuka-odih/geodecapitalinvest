@@ -1,3 +1,42 @@
+<style>
+    #google_translate_element {
+
+        color: transparent;
+    }
+
+    #google_translate_element a {
+
+        display: none;
+    }
+
+    select.google_translate_element {
+
+        color: black;
+    }
+
+    div.goog-te-gadget {
+
+        color: transparent;
+    }
+
+    div.goog-te-gadget {
+
+        color: transparent !important;
+    }
+
+    .goog-te-gadget .goog-te-combo {
+
+        margin: 0px 0 !important;
+        padding: 3px 2px;
+        background: #1d1d1d;
+        border: 1px solid #feb729;
+        color: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        outline: none;
+    }
+</style>
+
 <section id="utility" class="region region-utility">
     <div class="wrap">
         <section id="block-menu-menu-secondary-menu" class="block block-menu first odd" role="navigation">
@@ -17,14 +56,24 @@
 
 
         <div id="navigation">
-
             <div class="region region-navigation">
                 <section id="block-responsive-dropdown-menus-main-menu" class="block block-responsive-dropdown-menus first last odd">
 
-
-                    <ul id="main-menu" class="main-menu responsive-menu links"><li id="menu-item-484" class="menu-item menu-parent menu-item-primary first">
+                    <ul id="main-menu" class="main-menu responsive-menu links">
+                        <li class="menu-item menu-parent menu-item-primary first">
+                            <div id="google_translate_element"></div>
+                            <script>
+                                function googleTranslateElementInit() {
+                                    new google.translate.TranslateElement({
+                                        pageLanguage: 'en'
+                                    }, 'google_translate_element');
+                                }
+                            </script>
+                        </li>
+                        <li id="menu-item-484" class="menu-item menu-parent menu-item-primary first">
                             <a href="firm/about-geode.html" class="firm">Firm</a>
-                            <ul class="sub-menu tier-two"><li id="menu-item-489" class="menu-item menu-item-secondary first"><a href="{{ route('about') }}">About Geode</a></li>
+                            <ul class="sub-menu tier-two">
+                                <li id="menu-item-489" class="menu-item menu-item-secondary first"><a href="{{ route('about') }}">About Geode</a></li>
                                 <li id="menu-item-508" class="menu-item menu-item-secondary"><a href="{{ route('history') }}">Geode History</a></li>
                                 <li id="menu-item-509" class="menu-item menu-parent menu-item-secondary last"><a href="{{ route('our-team') }}">Our Team</a>
                                     <ul class="sub-menu tier-three"><li id="menu-item-554" class="menu-item menu-item-tertiary first">
@@ -34,7 +83,8 @@
                                         <li id="menu-item-656" class="menu-item menu-item-tertiary"><a href="firm/team/investment-leadership">Technology Leadership</a></li>
                                         <li id="menu-item-653" class="menu-item menu-item-tertiary last"><a href="firm/board-of-directors">Board of Directors</a></li>
                                     </ul></li>
-                            </ul></li>
+                            </ul>
+                        </li>
                         <li id="menu-item-485" class="menu-item menu-parent menu-item-primary"><a href="{{ route('our-approach') }}" class="investment-cap">Investment Capabilities</a>
                             <ul class="sub-menu tier-two"><li id="menu-item-510" class="menu-item menu-item-secondary first">
                                     <a href="{{ route('our-approach') }}">Our Approach</a></li>
@@ -48,3 +98,6 @@
         </div>
     </div>
 </header>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
