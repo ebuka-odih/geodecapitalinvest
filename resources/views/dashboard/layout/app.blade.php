@@ -106,14 +106,14 @@
     </div>
 </nav>
 <div class="my-10 mx-auto">
-{{--    <div style="margin-left: 40px" id="google_translate_element"></div>--}}
-{{--    <script>--}}
-{{--        function googleTranslateElementInit() {--}}
-{{--            new google.translate.TranslateElement({--}}
-{{--                pageLanguage: 'en'--}}
-{{--            }, 'google_translate_element');--}}
-{{--        }--}}
-{{--    </script>--}}
+    <div style="margin-left: 40px" id="google_translate_element"></div>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
     <div style="height:62px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;">
         <div style="height:40px; padding:0px; margin:0px; width: 100%;">
             <!-- TradingView Widget BEGIN -->
