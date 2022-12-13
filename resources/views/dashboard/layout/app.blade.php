@@ -37,7 +37,7 @@
 
         .goog-te-gadget .goog-te-combo {
 
-            margin: 0px 0 !important;
+            margin: 4px 0 !important;
             padding: 3px 2px;
             background: #1d1d1d;
             border: 1px solid #feb729;
@@ -57,19 +57,13 @@
                     <a href="{{ route('index') }}">
                         <img src="{{ asset('sites/all/themes/geode_zen/logo-white.png') }}" width="80" height="80" alt="" class="image-8" />
                     </a>
+
                 </div>
                 <!--<div style="margin-left:10px;font-size: 24px;color:white;font-weight: 800;">-->
                 <!--    <a href="https://www.cryptonfttrade.com/home">NFT Trades</a>-->
                 <!--</div>-->
             </div>
-            <div id="google_translate_element"></div>
-            <script>
-                function googleTranslateElementInit() {
-                    new google.translate.TranslateElement({
-                        pageLanguage: 'en'
-                    }, 'google_translate_element');
-                }
-            </script>
+
 
             <div class="hidden md:flex md:items-center">
                 <a href="{{ route('user.dashboard') }}" class="mx-3 text-gray-100 text-lg font-bold">Dashboard</a>
@@ -112,6 +106,14 @@
     </div>
 </nav>
 <div class="my-10 mx-auto">
+    <div style="margin-left: 40px" id="google_translate_element"></div>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en'
+            }, 'google_translate_element');
+        }
+    </script>
     <div style="height:62px; background-color: #1D2330; overflow:hidden; box-sizing: border-box; border: 1px solid #282E3B; border-radius: 4px; text-align: right; line-height:14px; block-size:62px; font-size: 12px; font-feature-settings: normal; text-size-adjust: 100%; box-shadow: inset 0 -20px 0 0 #262B38;padding:1px;padding: 0px; margin: 0px; width: 100%;">
         <div style="height:40px; padding:0px; margin:0px; width: 100%;">
             <!-- TradingView Widget BEGIN -->
@@ -151,7 +153,9 @@
                 </script>
             </div>
             <!-- TradingView Widget END -->
+
         </div>
+
         <!-- <div style="color: #626B7F; line-height: 14px; font-weight: 400; font-size: 11px; box-sizing: border-box; padding: 2px 6px; width: 100%; font-family: Verdana, Tahoma, Arial, sans-serif;"><a href="https://coinlib.io" target="_blank" style="font-weight: 500; color: #626B7F; text-decoration:none; font-size:11px">Cryptocurrency Prices</a>&nbsp;by Coinlib</div> -->
     </div>
 </div>

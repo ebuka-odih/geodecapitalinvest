@@ -71,7 +71,7 @@
                             </script>
                         </li>
                         <li id="menu-item-484" class="menu-item menu-parent menu-item-primary first">
-                            <a href="firm/about-geode.html" class="firm">Firm</a>
+                            <a href="firm/about-geode" class="firm">Firm</a>
                             <ul class="sub-menu tier-two">
                                 <li id="menu-item-489" class="menu-item menu-item-secondary first"><a href="{{ route('about') }}">About Geode</a></li>
                                 <li id="menu-item-508" class="menu-item menu-item-secondary"><a href="{{ route('history') }}">Geode History</a></li>
@@ -99,5 +99,4 @@
     </div>
 </header>
 
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
